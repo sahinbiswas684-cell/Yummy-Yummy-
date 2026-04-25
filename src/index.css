@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: #C8102E;
+  --color-brand-yellow: #F2A900;
+  --color-brand-black: #1A1A1A;
+  
+  --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Oswald", "Arial Black", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-brand-black bg-white;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display uppercase tracking-tighter font-black;
+  }
+}
